@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Tanooj_Portfolio/static/css/main.3bf562e1.css",
+    "main.js": "/Tanooj_Portfolio/static/js/main.2133ad98.js",
+    "static/js/453.245c0ba7.chunk.js": "/Tanooj_Portfolio/static/js/453.245c0ba7.chunk.js",
+    "static/media/bg-light.png": "/Tanooj_Portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/iot.png": "/Tanooj_Portfolio/static/media/iot.cb4ab368c4ebfb8a6854.png",
+    "static/media/mvgr_chatbot.png": "/Tanooj_Portfolio/static/media/mvgr_chatbot.8991233f1b627cdcb04e.png",
+    "static/media/E-gram.png": "/Tanooj_Portfolio/static/media/E-gram.6835f2318460abd2f12b.png",
+    "static/media/bg-dark.png": "/Tanooj_Portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/room_automation.png": "/Tanooj_Portfolio/static/media/room_automation.2e6bd47f5109d9ff2450.png",
+    "static/media/wastewatch.png": "/Tanooj_Portfolio/static/media/wastewatch.301c0e5e21b32edfc248.png",
+    "static/media/Chatbot_llm.png": "/Tanooj_Portfolio/static/media/Chatbot_llm.2d952892ef8fa2da7a46.png",
+    "static/media/3.jpg": "/Tanooj_Portfolio/static/media/3.d3302bf9d1d5326dd8ad.jpg",
+    "static/media/slog.png": "/Tanooj_Portfolio/static/media/slog.0c26557bb62f046125d0.png",
+    "static/media/EMS.png": "/Tanooj_Portfolio/static/media/EMS.2f638822fe9911d0cd42.png",
+    "static/media/fakelogo.png": "/Tanooj_Portfolio/static/media/fakelogo.c1efed5e42a9c5f07d3f.png",
+    "static/media/RRS.png": "/Tanooj_Portfolio/static/media/RRS.0daae44884e371ee8c70.png",
+    "index.html": "/Tanooj_Portfolio/index.html",
+    "main.3bf562e1.css.map": "/Tanooj_Portfolio/static/css/main.3bf562e1.css.map",
+    "main.2133ad98.js.map": "/Tanooj_Portfolio/static/js/main.2133ad98.js.map",
+    "453.245c0ba7.chunk.js.map": "/Tanooj_Portfolio/static/js/453.245c0ba7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bf562e1.css",
+    "static/js/main.2133ad98.js"
+  ]
+}
