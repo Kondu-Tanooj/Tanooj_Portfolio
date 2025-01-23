@@ -9,8 +9,16 @@ import pro7 from '../assets/images/fakelogo.png';
 import pro8 from '../assets/images/EMS.png';
 import pro9 from '../assets/images/RRS.png';
 import pro10 from '../assets/images/iot.png';
+import pro11 from '../assets/images/portfolio.png'
 import '../assets/styles/Project.scss';
 const projects = [
+    {
+        title: "My Portfolio",
+        description: "This is my portfolio made with ReactJS. In this portfolio, I had delpoyed chatbot named Luffy which is made with the help of Botpress an OpenSource platform. I hope this Bot can help u know details on my projects and other information.",
+        image: pro11,
+        demo:"https://kondu-tanooj.github.io/Tanooj_Portfolio/",
+        link: "https://github.com/Kondu-Tanooj/Tanooj_Portfolio",
+    },
     {
         title: "ChatBot_LLM",
         description: "This ChatBot is made with langchain and chainlit framework , it is developed on RAG model. This mainly aims to give responce on the requested question by retriveing from the given data either pdf or csv.  ",
