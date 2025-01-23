@@ -1,0 +1,187 @@
+.skills-container {
+    padding: 5% 10%; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    box-sizing: border-box; /* Ensures padding is included in the container's total width */
+    
+    svg {
+        color: white;
+    }
+}
+
+.skills-container .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for side-by-side layout */
+    grid-gap: 50px;
+    animation: slideInGrid 1s ease-out forwards;
+    padding: 0 15px; /* Added padding for spacing within grid */
+}
+
+.skills-container .skills-grid .skill {
+    align-items: center;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px; /* Added padding inside each skill to prevent text from reaching edges */
+    box-sizing: border-box; /* Ensures padding is inside the skill container */
+    border-radius: 8px; /* Optional: for rounded corners */
+
+    /* Stagger animation for each skill */
+    &:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+    &:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+    &:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+    &:nth-child(5) {
+        animation-delay: 1s;
+    }
+    &:nth-child(6) {
+        animation-delay: 1.2s;
+    }
+
+    /* Animation on hover */
+    &:hover {
+        transform: scale(2); /* Slight zoom on hover */
+        box-shadow: 0 4px 20px rgba(91, 88, 88, 0.5);
+    }
+}
+
+/* Style for the tech stack title */
+.chip-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.chip {
+    color: rgb(39, 40, 34) !important;
+    background-color: white !important;
+    font-size: 0.8rem !important;
+    height: 25px !important;
+    opacity: 0;
+    animation: fadeInChip 1s ease-out forwards;
+    animation-delay: 1.5s;
+
+    span {
+        font-family: 'Courier Prime', monospace;
+        color: rgb(39, 40, 34);
+    }
+
+    svg {
+        height: 15px !important;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: #e0e0e0;
+    }
+}
+
+.flex-chips {
+    line-height: 2;
+    margin: 0.5;
+}
+
+.flex-chips .MuiChip-root {
+    margin-right: 0.5em;
+    opacity: 0;
+    animation: fadeInChip 1s ease-out forwards;
+}
+
+.flex-chips .MuiChip-outlined {
+    background-color: #e0e0e0;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    opacity: 0;
+    animation: fadeInChip 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.flex-chips .MuiChip-outlined span {
+    color: rgb(39, 40, 34);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInGrid {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInChip {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .skills-container {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .skills-container .skills-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .skills-container .skills-grid .skill {
+            padding-bottom: 5%;
+        }
+    }
+
+    @media (max-width: 567px) {
+        .skills-container .skills-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .skills-container .skills-grid .skill {
+            padding-bottom: 3%;
+        }
+
+        .chip {
+            font-size: 0.7rem;
+            height: 22px !important;
+        }
+    }
+}
