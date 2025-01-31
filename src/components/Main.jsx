@@ -9,10 +9,12 @@ function Main() {
     <div className="container" id="home">
       <div className="about-section">
         <div className="image-wrapper">
-          <img
+        <a href="https://docs.google.com/document/d/1AM8urlf882Hm-FPm1rWp_bKtYERyviET/edit?usp=sharing&ouid=108684371136285123458&rtpof=true&sd=true" target="_blank" rel="noreferrer">
+        <img
             src={tanooj}
             alt="Avatar"
           />
+          </a>
         </div>
         <div className="content">
           <div className="social_icons">
@@ -23,7 +25,8 @@ function Main() {
               <LinkedInIcon />
             </a>
           </div>
-          <h1>Kondu Tanooj</h1>
+          <a href="https://docs.google.com/document/d/1AM8urlf882Hm-FPm1rWp_bKtYERyviET/edit?usp=sharing&ouid=108684371136285123458&rtpof=true&sd=true" target="_blank" rel="noreferrer"><h1>Kondu Tanooj</h1>
+          </a>
           <p>Software Developer | Prompt Engineer | Freelancer</p>
           <div className="mobile_social_icons">
             <a href="https://github.com/kondu-tanooj" target="_blank" rel="noreferrer">
