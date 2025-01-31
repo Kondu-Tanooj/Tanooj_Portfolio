@@ -10,6 +10,7 @@ const programmingLanguages = [
     "C++",
     "Java",
     "Python",
+    "Solidity",
     "R"
 ];
 
@@ -31,6 +32,7 @@ const webDevelopment = [
 const openSourceTechnologies = [
     "Git",
     "Docker",
+    "K8S-Kubernetes",
     "Botpress",
     "WordPress"
 ];
