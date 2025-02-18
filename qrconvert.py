@@ -2,6 +2,7 @@ import qrcode
 
 # URL to be converted to QR Code
 url = "https://kondu-tanooj.github.io/Tanooj_Portfolio/"
+#url = "https://t.me/+SfLzEKtHb44wNTM9"
 
 # Create a QR code object
 qr = qrcode.QRCode(

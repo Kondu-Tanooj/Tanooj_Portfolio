@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrochip,faBrain,faLaptopCode,faCode, faDatabase, faDesktop, faCogs } from '@fortawesome/free-solid-svg-icons';
+import { faMicrochip,faBrain,faLaptopCode,faCode, faDatabase, faDesktop, faCogs,faCubes,faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/ProgrammingSkills.scss';
 
@@ -12,6 +12,12 @@ const programmingLanguages = [
     "Python",
     "Solidity",
     "R"
+];
+
+const blockcahin = [
+    "Web3",
+    "Truffle",
+    "Ganache",
 ];
 
 const webDevelopment = [
@@ -30,9 +36,6 @@ const webDevelopment = [
 ];
 
 const openSourceTechnologies = [
-    "Git",
-    "Docker",
-    "K8S-Kubernetes",
     "Botpress",
     "WordPress"
 ];
@@ -76,7 +79,7 @@ const iotDevelopment = [
     "HTTP",
     "DLMS Meters",
     "Home Automation",
-    "Reverse Engineering"
+    "Reverse Engineering--ghidra"
 ];
 
 const machineLearning = [
@@ -91,6 +94,12 @@ const machineLearning = [
     "Streamlit",
     "Natural Language Processing (NLP)",
     "Large Language Models (LLM)"    
+];
+
+const devops = [
+    "Git",
+    "Docker",
+    "K8S-Kubernetes"
 ];
 
 function ProgrammingSkills() {
@@ -142,6 +151,19 @@ function ProgrammingSkills() {
                             ))}
                         </div>
                     </div>
+
+                    {/* Blockchain */}
+                    <div className="skill">
+                        <FontAwesomeIcon icon={faCubes} size="3x" />
+                        <h3>Blockchain</h3>
+                        <p>Worked on Blockchain technology by developing and experimenting with various projects to understand its workflow. Experienced in deploying a full blockchain project.</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {blockcahin.map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                    </div>
                     
                     {/* Databases */}
                     <div className="skill">
@@ -164,6 +186,19 @@ function ProgrammingSkills() {
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {operatingSystems.map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Devops */}
+                    <div className="skill">
+                        <FontAwesomeIcon icon={faCodeBranch} size="3x" />
+                        <h3>Devops</h3>
+                        <p>Experienced with Git and Docker, with hands-on experience in running Kubernetes in a local environment.</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {devops.map((label, index) => (
                                 <Chip key={index} className='chip' label={label} />
                             ))}
                         </div>
